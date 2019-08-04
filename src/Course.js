@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './App.css';
 import SideNavBar from "./components/SideNavBar"
+import RadialChar from "./components/RadialChar"
 import phy from "./img/phy.svg"
 import Maths from "./img/maths.svg"
 import eng from "./img/eng.svg"
@@ -20,7 +21,7 @@ export default class Course extends Component {
   </ol>
 </nav>
 <div className="">
-         <h6 className="text-info font-weight-bold">Courses</h6>
+         <h6 className="text-info font-weight-bold ml-3">Courses</h6>
         </div>
          <div className="row ml-5 mr-5 ">
  <div className="card border rounded-circle w-25"> 
@@ -49,21 +50,48 @@ export default class Course extends Component {
          </div>
        </div>
          </div>
-        <div className="">
-         <h6 className="text-info font-weight-bold">Progress</h6>
-        </div>
-        
-        <div class="card ml-3 border rounded">
+         <div className="row">
+ <div className="col">
+         <h6 className="text-info font-weight-bold ml-3">Progress</h6>
+       
+        <div className="row ml-3">
+          <div class="card ml-3 border rounded">
   <div class="card-body">
     <div className="row">
       <img src={Maths} alt="progress" className="w-25" />
-        <h5 class="card-title">Special title treatment</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <h5 class="card-title">CHAPTER IV : Engineering Calculus and Differential Equations</h5>
+        
+    <p class="card-text">50% Completed</p>
+    <br />
     <a href="#" class="btn btn-primary">Go somewhere</a>
     </div>
   
   </div>
 </div>
+        </div>
+        
+<div className="row mt-3 ml-3">
+  <div class="card ml-3 border rounded">
+  <div class="card-body">
+    <div className="row">
+      <img src={Maths} alt="progress" className="w-25" />
+        <h5 class="card-title">CHAPTER IV : Engineering Calculus and Differential Equations</h5>
+        
+    <p class="card-text">50% Completed</p>
+    <br />
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  
+  </div>
+</div>
+</div>
+</div>
+<div className="col">
+  <RadialChar />
+</div>
+         </div>
+       
+
           </div>
             </div>
             

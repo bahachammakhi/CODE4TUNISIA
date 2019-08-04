@@ -28,8 +28,8 @@ class SideNavBar extends React.Component {
                 alt="Me"
                 className="rounded-circle "
               />
-              <h6 className="text-dark mt-3 ">Student</h6>
-              <h6>Menu :</h6>
+              <h6 className="text-dark mt-3 mb-3 ">Student</h6>
+              
               <a onClick={this.props.note} className="text-dark mt-5">
               <Link to="/"> <i className="fas fa-clipboard mr-2" />Dashboard</Link> 
               </a>
@@ -37,8 +37,23 @@ class SideNavBar extends React.Component {
               <a onClick={this.props.todo} className="text-dark">
               <Link to="/Courses/"><i className="fas fa-list mr-2" />Courses</Link> 
               </a>
+              <hr/>
+             
 
+
+
+              <a onClick={this.props.todo} className="text-dark">
+              <Link to="/chat/"><i className="fas fa-comment mr-2" />Chat</Link> 
+              </a>
               <hr />
+              <a onClick={this.props.todo} className="text-dark">
+              <Link to="/Homework/"><i className="fas fa-briefcase mr-2" />Homework</Link> 
+              </a>
+              <hr />
+              
+
+
+
               <a onClick={this.props.signout} className="text-dark">
                 <i className="fas mr-2 fa-sign-out-alt" />Signout
               </a>

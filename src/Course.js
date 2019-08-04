@@ -13,6 +13,7 @@ export default class Course extends Component {
               <div>
             <SideNavBar  />
           </div>  
+          
           <div className="pushmain">
           <div>
           <nav aria-label="breadcrumb">

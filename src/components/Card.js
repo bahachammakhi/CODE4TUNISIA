@@ -13,10 +13,10 @@ export default class Card extends Component {
 </div>
         </div>
   <ul className="list-unstyled">
-      <li>{this.props.op1}<i class="fas fa-check-circle ml-2 text-info"></i></li> 
-      <li>{this.props.op2}<i class="fas fa-check-circle ml-2 "></i></li>
-      <li>{this.props.op3}<i class="fas fa-check-circle ml-2 text-info"></i></li>
-      <li>{this.props.op4}<i class="fas fa-check-circle ml-2"></i></li>
+      <li>{this.props.op1}<i className="fas fa-check-circle ml-2 text-info"></i></li> 
+      <li>{this.props.op2}<i className="fas fa-check-circle ml-2 "></i></li>
+      <li>{this.props.op3}<i className="fas fa-check-circle ml-2 text-info"></i></li>
+      <li>{this.props.op4}<i className="fas fa-check-circle ml-2"></i></li>
   </ul>
   </div>
 </div>

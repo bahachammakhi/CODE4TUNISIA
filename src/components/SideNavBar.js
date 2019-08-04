@@ -55,7 +55,7 @@ class SideNavBar extends React.Component {
 
 
               <a onClick={this.props.signout} className="text-dark">
-                <i className="fas mr-2 fa-sign-out-alt" />Signout
+              <Link to="/SignIn/"> <i className="fas mr-2 fa-sign-out-alt" />Signout</Link> 
               </a>
             </div>
           </nav>

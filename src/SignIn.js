@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 export default class SignIn extends Component {
     render() {
         return (
@@ -8,7 +8,7 @@ export default class SignIn extends Component {
               <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
                 <div class="card card-signin my-5">
                   <div class="card-body">
-                    <h5 class="card-title text-center">Sign In</h5>
+                  <Link to="/"> <h5 class="card-title text-center">Sign In</h5> </Link >
                     <form class="form-signin">
                       <div class="form-label-group">
                         <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus/>
@@ -24,8 +24,8 @@ export default class SignIn extends Component {
                         <input type="checkbox" class="custom-control-input" id="customCheck1" />
                         <label class="custom-control-label" for="customCheck1">Remember password</label>
                       </div>
-                      <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Sign in</button>
-                      <hr class="my-4">
+                      <Link to="/">  <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Sign in</button> </Link >
+                      <hr class="my-4"/>
                       <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit"><i class="fab fa-google mr-2"></i> Sign in with Google</button>
                       <button class="btn btn-lg btn-facebook btn-block text-uppercase" type="submit"><i class="fab fa-facebook-f mr-2"></i> Sign in with Facebook</button>
                     </form>
